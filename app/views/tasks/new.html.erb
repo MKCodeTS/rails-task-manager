@@ -1,0 +1,12 @@
+<h1>Create a new Task</h1>
+
+<%= simple_form_for(@task) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :details %>
+  <%= f.submit class: 'btn btn-primary' %>
+<% end %>
+
+<hr>
+<%= link_to tasks_path do %>
+  <i class="fa fa-history"></i> Back to the full list
+<% end %>
